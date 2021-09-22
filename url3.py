@@ -1,0 +1,10 @@
+#bulding url
+from urllib.parse import urlsplit
+url = urlsplit("https://www.google.com/search?q=supmaroc+&source=hp&ei=fnsSYd6JLpOU1fAPkaKAgAE&iflsig=AINFCbYAAAAAYRKJjjyVhtbukLeYMnASy4uznEITrZY4&oq=supmaroc+&gs_lcp=Cgdnd3Mtd2l6EAMyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEOhQILhCABBDHARCjAhCLAxCoAxCnAzoXCC4QgAQQxwEQowIQiwMQpwMQqAMQkwI6BQguEIAEOhQILhCABBDHARCjAhCLAxCnAxCoAzoICC4QgAQQkwI6FAguEIAEEMcBEK8BEIsDEKYDEKgDOhYILhCABBDHARCvARAKEIsDEKYDEKgDOgcIABCABBAKUJICWIAkYLolaABwAHgAgAGRAogB_QuSAQUwLjguMZgBAKABAbgBAg&sclient=gws-wiz&ved=0ahUKEwjewIunxKbyAhUTShUIHRERABAQ4dUDCAY&uact=5")
+url2 = tuple(url)
+#component of url
+print(url2)
+print(url.scheme)
+print(url.netloc)
+print(url.path)
+print(url.query)

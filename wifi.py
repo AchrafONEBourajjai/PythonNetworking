@@ -1,0 +1,10 @@
+from pythonwifi.iwlibs import Wireless
+wifi = Wireless("en0")
+print "SSID: "+wifi.getEssid()
+print "Bit Rate: "+wifi.getBitrate()
+print "Mac Addresse: "+wifi.getAPaddr()
+print "TX power: "+wifi.getTXPower()
+print "Frequency: "+wifi.getFrequency()
+print "Mode"+wifi.getMode()
+print "Wireless card name: "+wifi.getWirelessName()
+print wifi.getChannelInfo()
